@@ -16,8 +16,8 @@
 //MasterToken Мастер токен из письма 
 //ClientAppId строковый уникальный идентификатор вашего приложения 
 
-IFnsOpenApi api = new Services.FnsOpenApi(new OpenApiClient(new LogWriter()));
-var token = api.GetAuthToken(MasterToken);
+IFnsApiClient apiClient = FnsApiClientFactory.CreateClient();
+var token = apiClient.GetAuthToken(MasterToken);
 Console.WriteLine(token);
 
 var receipt = new Receipt
@@ -30,7 +30,7 @@ var receipt = new Receipt
     Operation = 1
 };
 
-var result = api.GetReceiptDetails(token, receipt, ClientAppId);
+var result = apiClient.GetReceiptDetails(token, receipt, ClientAppId);
 Console.WriteLine(result.ToJson());
 
 ```
