@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApiTest", "ConsoleApiTest\ConsoleApiTest.csproj", "{79762941-1E0F-4E11-B93B-53D114601FA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FnsOpenApi.Domain", "FnsOpenApi.Domain\FnsOpenApi.Domain.csproj", "{220C6133-ED65-45D7-BD00-A63FEC1E030E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FnsOpenApi.Domain", "FnsOpenApi.Domain\FnsOpenApi.Domain.csproj", "{220C6133-ED65-45D7-BD00-A63FEC1E030E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FnsOpenApi.Services", "FnsOpenApi.Services\FnsOpenApi.Services.csproj", "{0B862387-F9D9-4C65-B3F7-17D00EF8A22D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FnsOpenApi.Services", "FnsOpenApi.Services\FnsOpenApi.Services.csproj", "{0B862387-F9D9-4C65-B3F7-17D00EF8A22D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FnsOpenApi.Tests", "FnsOpenApi.Tests\FnsOpenApi.Tests.csproj", "{08874049-77FE-476F-B83C-39DB300C165E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FnsOpenApi.Tests", "FnsOpenApi.Tests\FnsOpenApi.Tests.csproj", "{08874049-77FE-476F-B83C-39DB300C165E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{79762941-1E0F-4E11-B93B-53D114601FA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79762941-1E0F-4E11-B93B-53D114601FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{79762941-1E0F-4E11-B93B-53D114601FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{79762941-1E0F-4E11-B93B-53D114601FA9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{220C6133-ED65-45D7-BD00-A63FEC1E030E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{220C6133-ED65-45D7-BD00-A63FEC1E030E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{220C6133-ED65-45D7-BD00-A63FEC1E030E}.Release|Any CPU.ActiveCfg = Release|Any CPU
