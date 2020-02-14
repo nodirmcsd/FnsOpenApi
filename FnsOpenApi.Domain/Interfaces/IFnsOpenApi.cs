@@ -1,0 +1,15 @@
+﻿using System.Collections.Generic;
+using System.Text;
+using System.Threading.Tasks;
+using FnsOpenApi.Domain.Models;
+using FnsOpenApi.Domain.Models.ReceiptResponse;
+
+namespace FnsOpenApi.Domain.Interfaces
+{
+    public interface IFnsOpenApi
+    {
+        string GetAuthToken(string masterToken);
+        ReceiptCheck CheckReceipt(string token, Receipt receipt, string appClientId);
+        ReceiptDetails GetReceiptDetails(string token, Receipt receipt, string appClientId);
+    }
+}

@@ -1,0 +1,25 @@
+﻿{
+  "ProviderId": "Microsoft.VisualStudio.ConnectedService.Wcf",
+  "Version": "15.0.31022.994",
+  "GettingStartedDocument": {
+    "Uri": "https://go.microsoft.com/fwlink/?linkid=858517"
+  },
+  "ExtendedData": {
+    "inputs": [
+      "https://openapi.nalog.ru:8090/open-api/AuthService/0.1?wsdl"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "internalTypeAccess": true,
+    "namespaceMappings": [
+      "*, AuthService"
+    ],
+    "references": [
+      "D:\\!!!!my_projects\\FnsApiTest\\FnsOpenApi.Services\\bin\\Debug\\netstandard2.0\\FnsOpenApi.Domain.dll"
+    ],
+    "targetFramework": "netstandard2.0",
+    "typeReuseMode": "All"
+  }
+}
