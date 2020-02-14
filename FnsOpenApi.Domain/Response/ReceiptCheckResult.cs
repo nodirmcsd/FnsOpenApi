@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace FnsOpenApi.Domain.Response
+﻿namespace FnsOpenApi.Domain.Response
 {
     public class ReceiptCheckResult
     {

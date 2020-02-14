@@ -7,9 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Xml;
 using System.Xml.Linq;
-using FnsOpenApi.Domain;
 using FnsOpenApi.Domain.Interfaces;
-using FnsOpenApi.Domain.Response;
 using FnsOpenApi.Domain.Utils;
 
 namespace FnsOpenApi.Services

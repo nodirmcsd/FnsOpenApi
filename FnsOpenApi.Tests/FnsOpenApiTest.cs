@@ -1,5 +1,4 @@
 using System;
-using FnsOpenApi.Domain;
 using FnsOpenApi.Domain.Interfaces;
 using FnsOpenApi.Domain.Models;
 using FnsOpenApi.Domain.Utils;
@@ -15,14 +14,13 @@ namespace FnsOpenApi.Tests
     public class FnsOpenApiTest
     {
         private const string MasterToken = "";
-
-        private const string ClientAppId = "YOU_APPLICATION_NAME";
+        private const string ClientAppId = "";
 
         [TestMethod]
         public void TestGetAuthToken()
         {
-            IFnsOpenApi api = new Services.FnsOpenApi(new OpenApiClient(new LogWriter()));
-            var token = api.GetAuthToken(MasterToken);
+            IFnsApiClient apiClient = FnsApiClientFactory.CreateClient();
+            var token = apiClient.GetAuthToken(MasterToken);
             Assert.IsTrue(!string.IsNullOrEmpty(token));
             Console.WriteLine(token);
         }
@@ -30,8 +28,8 @@ namespace FnsOpenApi.Tests
         [TestMethod]
         public void TestCheckReceipt()
         {
-            IFnsOpenApi api = new Services.FnsOpenApi(new OpenApiClient(new LogWriter()));
-            var token = api.GetAuthToken(MasterToken);
+            IFnsApiClient apiClient = FnsApiClientFactory.CreateClient();
+            var token = apiClient.GetAuthToken(MasterToken);
             Assert.IsTrue(!string.IsNullOrEmpty(token));
             Console.WriteLine(token);
             var receipt = new Receipt
@@ -44,7 +42,7 @@ namespace FnsOpenApi.Tests
                 Operation = 1
             };
 
-            var result = api.CheckReceipt(token, receipt, ClientAppId);
+            var result = apiClient.CheckReceipt(token, receipt, ClientAppId);
             Console.WriteLine(result.IsOk);
             Console.WriteLine(result.Message);
         }
@@ -53,8 +51,8 @@ namespace FnsOpenApi.Tests
         [TestMethod]
         public void TestGetReceiptDetails()
         {
-            IFnsOpenApi api = new Services.FnsOpenApi(new OpenApiClient(new LogWriter()));
-            var token = api.GetAuthToken(MasterToken);
+            IFnsApiClient apiClient = FnsApiClientFactory.CreateClient();
+            var token = apiClient.GetAuthToken(MasterToken);
             Assert.IsTrue(!string.IsNullOrEmpty(token));
             Console.WriteLine(token);
             var receipt = new Receipt
@@ -67,7 +65,7 @@ namespace FnsOpenApi.Tests
                 Operation = 1
             };
 
-            var result = api.GetReceiptDetails(token, receipt, ClientAppId);
+            var result = apiClient.GetReceiptDetails(token, receipt, ClientAppId);
             Console.WriteLine(result.ToJson());
         }
     }
