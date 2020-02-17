@@ -1,14 +1,12 @@
 using System;
-using FnsOpenApi.Domain.Interfaces;
-using FnsOpenApi.Domain.Models;
-using FnsOpenApi.Domain.Utils;
-using FnsOpenApi.Services;
+using FnsOpenApi.Client.Interfaces;
+using FnsOpenApi.Client.Models;
+using FnsOpenApi.Client.Services;
+using FnsOpenApi.Client.Utils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace FnsOpenApi.Tests
 {
-
-
 
     [TestClass]
     public class FnsOpenApiTest

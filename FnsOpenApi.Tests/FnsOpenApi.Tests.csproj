@@ -15,8 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FnsOpenApi.Domain\FnsOpenApi.Domain.csproj" />
-    <ProjectReference Include="..\FnsOpenApi.Services\FnsOpenApi.Services.csproj" />
+    <ProjectReference Include="..\FnsOpenApi.Client\FnsOpenApi.Client.csproj" />
   </ItemGroup>
 
 </Project>
