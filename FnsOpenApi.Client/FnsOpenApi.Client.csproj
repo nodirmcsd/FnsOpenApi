@@ -3,12 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
+    <Version>1.0.0</Version>
     <Authors>Nodir Azam</Authors>
     <Company>New Marketing LCC</Company>
     <Product>FNS Open Api Client</Product>
     <Copyright>Copyright (C) New Marketing LCC</Copyright>
-    <NeutralLanguage>en-GB</NeutralLanguage>
+    <NeutralLanguage>en-US</NeutralLanguage>
     <PackageTags>fns, receipt check, fns open api</PackageTags>
   </PropertyGroup>
 
